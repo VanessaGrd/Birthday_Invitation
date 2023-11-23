@@ -7,14 +7,17 @@ module.exports = {
         primary: {
           50: "#7D5E54",
           100: "#f3e1d7",
+          150: "#C2A499",
         },
         secondary: {
           50: "#fef8f3",
+          100: "#FCF9F6",
+          150: "#B8EAE0",
         },
       },
     },
     fontFamily: {
-      abc: ["Roboto", "sans-serif"],
+      abc: ["Dancing Script", "cursive"],
     },
   },
   plugins: [],
