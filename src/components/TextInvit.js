@@ -13,7 +13,7 @@ export default function TextInvit() {
           La fête aura lieu
           <p className="mt-4 mb-6 font-bold text-2xl">le samedi 16 mars 2023 à 12h</p>
         </p>
-        <div className="flex flex-col justify-center items-center bg-primary-150 p-2 mb-8 rounded-md">
+        <div className="flex flex-col justify-center items-center bg-primary-50 p-2 mb-8 rounded-md">
           <img src={warning} alt="warning" className="w-20" />
           <p className="text-2xl font-semibold text-primary-100">
             Mais chut ! <br></br>
