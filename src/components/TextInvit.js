@@ -4,7 +4,7 @@ import christine2 from "../assets/christine2.jpg";
 export default function TextInvit() {
 
     return (
-      <div className="bg-hero-pattern bg-cover  flex justify-around text-center flex-col font-abc px-4 text-primary-50 items-center">
+      <div className="bg-hero-pattern bg-cover h-full flex justify-around text-center flex-col font-abc px-4 text-primary-50 items-center">
         <h1 className=" text-4xl font-bold  mt-10">Félicitations ! </h1>
         <h2 className="text-2xl font-medium my-4">Il s'agit bien de Christine</h2>
         <img className="w-1/2 md:w-1/3 mb-10" src={christine2} alt="pictureofchristine" />
