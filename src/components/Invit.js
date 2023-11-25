@@ -3,20 +3,22 @@ import christine from "../assets/christine.jpg";
 
 export default function Invit() {
   return (
-    <div className="h-full flex flex-col  justify-center md:rounded-none border-2 bg-hero-pattern bg-cover ">
-      <div className="flex flex-col items-center mt-28 px-8 mb-4 ">
-        <h1 className="mb-4 text-4xl font-normal text-center leading-tight tracking-tight text-primary-50 font-abc md:text-5xl lg:text-5xl ">Reconnaissez-vous cette jeune fille ?</h1>
+    <div className="h-[100vh] flex flex-col  justify-center md:rounded-none border-2 bg-hero-pattern bg-cover bg-center lg:bg-contain lg:bg-no-repeat lg:bg-secondary-50 lg:items-center">
+      <div className="h-[100vh] lg:w-1/3 flex justify-around flex-col ">
+        <div className="flex flex-col items-center mt-20 px-8  ">
+          <h1 className="mb-4 text-4xl font-normal text-center leading-tight tracking-tight drop-shadow-xl text-primary-50 font-abc ">Reconnaissez-vous cette jeune fille ?</h1>
 
-        <img className=" shadow-2xl rounded-md w-52 border-8 border-primary-50 md:max-w-1/2 " src={christine} alt="girl" />
-      </div>
+          <img className=" shadow-2xl rounded-md w-52 border-8 border-primary-50 md:max-w-1/2 " src={christine} alt="girl" />
+        </div>
 
-      <div className="flex justify-around flex-row">
-        <Link className="font-abc text-2xl bg-primary-50 text-primary-100 p-2 px-4 shadow-xl rounded-md" to="/textinvit" >
-          Oui, <br></br> bien évidemment !
-        </Link>
-        <button className="font-abc p-2 px-4 text-2xl bg-primary-100 text-primary-50  shadow-xl rounded-md">
-          Non, <br></br> j'ai besoin d'aide !
-        </button>
+        <div className="flex justify-between flex-col lg:flex-row w-1/2 lg:w-full px-4 h-40">
+          <Link className="font-abc text-xl text-center flex items-center  bg-primary-50 justify-center text-primary-100 p-2 shadow-xl rounded-md" to="/textinvit">
+            Oui, <br></br> bien évidemment
+          </Link>
+          <Link className="font-abc p-2 px-4 text-xl flex items-center text-center bg-primary-100 text-primary-50  shadow-xl rounded-md justify-center">
+            Non, <br></br> j'ai besoin d'aide
+          </Link>
+        </div>
       </div>
     </div>
   );

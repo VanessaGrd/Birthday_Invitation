@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: "#621639",
-          100: "#F3FBF9",
+          50: "#CD8987",
+          100: "#FEF7F9",
           150: "#C2A499",
         },
         secondary: {
@@ -20,7 +20,7 @@ module.exports = {
       abc: ["Dancing Script", "cursive"],
     },
     backgroundImage: {
-      "hero-pattern": "url('https://i.etsystatic.com/18975710/r/il/225af9/3080039953/il_570xN.3080039953_hhrg.jpg')",
+      "hero-pattern": "url('https://i.pinimg.com/564x/2e/78/db/2e78dbe5d5b513c901548f96b5f6f197.jpg')",
     },
   },
   plugins: [],
