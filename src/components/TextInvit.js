@@ -9,13 +9,13 @@ export default function TextInvit() {
         <h2 className="text-2xl font-medium my-4">Il s'agit bien de Christine</h2>
         <img className="w-1/2 md:w-1/3 mb-10" src={christine2} alt="pictureofchristine" />
         <p className="text-2xl font-medium mb-10">Au printemps prochain elle va fêter ses 60 ans ! Nous commptons sur vous pour l'aider à souffler ses bougies.</p>
-        <p className="text-3xl ">
+        <p className="text-2xl ">
           La fête aura lieu
-          <p className="mt-4 mb-6 font-bold text-3xl">le samedi 16 mars 2023 à 12h</p>
+          <p className="mt-4 mb-6 font-bold text-2xl">le samedi 16 mars 2023 à 12h</p>
         </p>
         <div className="flex flex-col justify-center items-center bg-primary-150 p-2 mb-8 rounded-md">
           <img src={warning} alt="warning" className="w-20" />
-          <p className="text-3xl font-semibold text-primary-100">
+          <p className="text-2xl font-semibold text-primary-100">
             Mais chut ! <br></br>
             <span className="border-b-4 border-primary-100">C'est une surprise, </span>elle n'est pas au courant !{" "}
           </p>
