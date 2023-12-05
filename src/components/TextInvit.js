@@ -3,16 +3,16 @@ import christine2 from "../assets/christine2.jpg";
 
 export default function TextInvit() {
 const handleSmsClick = () => {
-  const phoneNumber = "06.82.46.68.83"; // Remplacez par votre numéro de téléphone
-  const message = "Je confirme ma présence à la fête d'anniversaire le 16 mars 2024!";
+  const phoneNumber = "06.82.46.68.83"; 
+  const message = "Bonjour Vanessa, Je confirme ma présence à la fête d'anniversaire le 16 mars 2024! Signé .... ";
   const smsLink = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
   window.location.href = smsLink;
 };
 
 const handleEmailClick = () => {
-  const emailAddress = "vanessa.giraud.lyon@gmail.com"; // Remplacez par votre adresse e-mail
+  const emailAddress = "vanessa.giraud.lyon@gmail.com"; // 
   const subject = "Réponse pour la fête d'anniversaire";
-  const body = "Je confirme ma présence à la fête d'anniversaire le 16 mars 2024!";
+  const body = "Bonjour Vanessa, Je confirme ma présence à la fête d'anniversaire le 16 mars 2024! Signé ....";
   const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = emailLink;
 };
@@ -44,13 +44,25 @@ const handleEmailClick = () => {
           </span>{" "}
         </p>
 
-        <div className="flex flex-row text-md mb-10">
-          <button className="bg-primary-50 text-secondary-50 px-4 py-2 rounded mr-4" onClick={handleSmsClick}>
-            Répondre par SMS <br></br>(06.82.46.68.83)
-          </button>
-          <button className="bg-primary-50 text-secondary-50 px-4 py-2 rounded" onClick={handleEmailClick}>
-            Répondre par E-mail (vanessa.giraud.lyon@gmail.com)
-          </button>
+        <div className="flex flex-col mb-10">
+          <p className="text-2xl mb-4">
+            Réponse souhaitée <span className="font-semibold">avant le 20/01/2024</span>
+          </p>
+          <div className="flex flex-row text-md">
+            <button className="bg-primary-50 text-secondary-50 px-2  rounded mr-4" onClick={handleSmsClick}>
+              <span className="font-semibold text-lg">
+                {" "}
+                Cliquez-ici <br></br> pour répondre par SMS
+              </span>{" "}
+              <br></br>(06.82.46.68.83)
+            </button>
+            <button className="bg-primary-50 text-secondary-50 px-2  rounded" onClick={handleEmailClick}>
+              <span className="font-semibold text-lg">
+                Cliquez-ici <br></br> pour répondre par e-mail{" "}
+              </span>
+              (vanessa.giraud.lyon@gmail.com){" "}
+            </button>
+          </div>
         </div>
       </div>
     );
