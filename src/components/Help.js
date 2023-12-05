@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Help() {
   return (
-    <div className="h-[100vh] flex flex-col  justify-around md:rounded-none  bg-hero-pattern bg-cover bg-center lg:bg-no-repeat lg:bg-secondary-50 items-center lg:bg-contain font-abc text-2xl text-primary-50 p-4">
+    <div className="h-[100vh] flex flex-col  justify-around md:rounded-none  bg-hero-pattern bg-cover bg-center lg:bg-no-repeat lg:bg-secondary-50 items-center lg:bg-contain font-abc text-2xl text-primary-50 p-8">
       <h2 className="font-semibold">Quelques indices...</h2>
 
       <ul className="px-4  font-medium list-disc ">
