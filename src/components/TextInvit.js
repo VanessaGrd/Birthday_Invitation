@@ -4,7 +4,7 @@ import christine2 from "../assets/christine2.jpg";
 export default function TextInvit() {
 const handleSmsClick = () => {
   const phoneNumber = "06.82.46.68.83"; 
-  const message = "Bonjour Vanessa, Je confirme ma présence à la fête d'anniversaire le 16 mars 2024! Signé .... ";
+  const message = "Bonjour Vanessa, Je confirme ma/notre présence à la fête d'anniversaire le 16 mars 2024! Signé .... ";
   const smsLink = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
   window.location.href = smsLink;
 };
@@ -12,7 +12,7 @@ const handleSmsClick = () => {
 const handleEmailClick = () => {
   const emailAddress = "vanessa.giraud.lyon@gmail.com"; // 
   const subject = "Réponse pour la fête d'anniversaire";
-  const body = "Bonjour Vanessa, Je confirme ma présence à la fête d'anniversaire le 16 mars 2024! Signé ....";
+  const body = "Bonjour Vanessa, Je confirme ma/notre présence à la fête d'anniversaire le 16 mars 2024! Signé ....";
   const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = emailLink;
 };
