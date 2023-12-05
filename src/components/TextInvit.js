@@ -4,7 +4,7 @@ import christine2 from "../assets/christine2.jpg";
 export default function TextInvit() {
 const handleSmsClick = () => {
   const phoneNumber = "06.82.46.68.83"; 
-  const message = "Bonjour Vanessa, Je confirme ma/notre présence à la fête d'anniversaire le 16 mars 2024! Signé .... ";
+  const message = "Bonjour, Je confirme ma/notre présence à la fête d'anniversaire de Christine le 16 mars 2024! Signé .... ";
   const smsLink = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
   window.location.href = smsLink;
 };
@@ -12,7 +12,7 @@ const handleSmsClick = () => {
 const handleEmailClick = () => {
   const emailAddress = "vanessa.giraud.lyon@gmail.com"; // 
   const subject = "Réponse pour la fête d'anniversaire";
-  const body = "Bonjour Vanessa, Je confirme ma/notre présence à la fête d'anniversaire le 16 mars 2024! Signé ....";
+  const body = "Bonjour, Je confirme ma/notre présence à la fête d'anniversaire de Christine le 16 mars 2024! Signé ....";
   const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = emailLink;
 };
@@ -44,7 +44,7 @@ const handleEmailClick = () => {
           </span>{" "}
         </p>
 
-        <div className="flex flex-col mb-10">
+        <div className="flex flex-col mb-6">
           <p className="text-2xl mb-4">
             Réponse souhaitée <span className="font-semibold">avant le 20/01/2024</span>
           </p>
@@ -64,6 +64,7 @@ const handleEmailClick = () => {
             </button>
           </div>
         </div>
+        <p className="text-xl mb-6">Pierre, Vanessa et Claire</p>
       </div>
     );
 }
