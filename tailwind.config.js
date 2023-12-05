@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: "#CD8987",
+          50: "#593837",
           100: "#FEF7F9",
           150: "#C2A499",
         },
@@ -17,10 +17,11 @@ module.exports = {
       },
     },
     fontFamily: {
-      abc: ["Dancing Script", "cursive"],
+      abc: ["Caveat", "cursive"],
+      def: ["Montserrat", "sans-serif"],
     },
     backgroundImage: {
-      "hero-pattern": "url('https://i.pinimg.com/564x/2e/78/db/2e78dbe5d5b513c901548f96b5f6f197.jpg')",
+      "hero-pattern": "url('https://i.pinimg.com/564x/89/a7/85/89a7853cbde438da7a3013f35836e30f.jpg')",
     },
   },
   plugins: [],
